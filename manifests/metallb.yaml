@@ -320,8 +320,11 @@ spec:
         - containerPort: 7472
           name: monitoring
         resources:
-          limits:
+          requests:
             cpu: 100m
+            memory: 100Mi
+          limits:
+            cpu: 200m
             memory: 100Mi
         securityContext:
           allowPrivilegeEscalation: false
@@ -376,8 +379,11 @@ spec:
         - containerPort: 7472
           name: monitoring
         resources:
-          limits:
+          requests:
             cpu: 100m
+            memory: 100Mi
+          limits:
+            cpu: 200m
             memory: 100Mi
         securityContext:
           allowPrivilegeEscalation: false
